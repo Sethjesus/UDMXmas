@@ -36,17 +36,19 @@
         }
 
         /* Header Styling */
-        .header-message {
-            font-size: 1.5rem;
-            color: white;
-            background-color: rgba(42, 127, 111, 0.8); /* Semi-transparent header */
-            padding: 15px;
-            width: 100%;
-            text-align: center;
-            position: fixed;
-            top: 0;
+           .header-message {
+         font-size: 1.5rem;
+           color: white;
+           background-color: rgba(255, 0, 0, 0.6); /* Red with semi-transparency */
+           padding: 15px;
+           width: 100%;
+           text-align: center;
+           position: fixed;
+           top: 0;
             z-index: 20;
         }
+
+
 
         /* Container for Carousel */
         .card-container {
@@ -56,14 +58,14 @@
             overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Align items to the top */
+            align-items: center;
             margin-top: 60px; /* Adjust for header */
         }
 
         /* Carousel Styling */
         .carousel {
             display: flex;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out; /* Faster transition */
         }
 
         .carousel-item {
@@ -71,15 +73,14 @@
             height: 100%;
             position: relative;
             display: flex;
-            justify-content: center; /* Center the images horizontally */
-            align-items: center; /* Center the images vertically */
+            justify-content: center;
+            align-items: center;
         }
 
         .carousel-item img {
-            width: 100%; /* Make the image take up the full width */
-            height: 100%; /* Make the image take up the full height */
-            object-fit: cover; /* Ensures the image fills the container while maintaining the aspect ratio */
-            object-position: center; /* Centers the image */
+            width: 85%;
+            height: 85%;
+            object-fit: cover;
         }
 
         .message {
@@ -100,7 +101,7 @@
         footer {
             background-color: rgba(42, 127, 111, 0.8); /* Semi-transparent footer */
             color: white;
-            padding: 20px 10px;
+            padding: 10px 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
